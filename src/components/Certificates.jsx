@@ -20,8 +20,9 @@ const certificatesData = [
     title: "JavaScript Fundamental",
     issuer: "Udemy",
     date: "Mei 2024",
-    link: "https://example.com/sertifikat-js",
+    link: "https://example.com/serti  fikat-js",
     // 💡 Gunakan variabel impor gambar3 di sini
+    
     image: gambar3,
   },
   {

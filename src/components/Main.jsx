@@ -5,6 +5,7 @@ import gambar1 from "../assets/poto.png";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Certificates from "./Certificates";
+import Galery from "./Galery";
 
 export default function Main() {
   return (
