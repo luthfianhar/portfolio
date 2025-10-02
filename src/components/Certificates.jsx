@@ -2,9 +2,9 @@
 
 import React from "react";
 // Import gambar lokal Anda
-import gambar1 from "../assets/html.png";
-import gambar3 from "../assets/javascript.png";
-import gambar2 from "../assets/react.png"; // Jika ada gambar kedua
+import gambar1 from "../assets/HTML.png";
+import gambar3 from "../assets/javascript..png";
+import gambar2 from "../assets/react..png"; // Jika ada gambar kedua
 
 // Data Dummy Sertifikat
 const certificatesData = [
