@@ -5,6 +5,7 @@ import React from "react";
 import gambar1 from "../assets/HTML.png";
 import gambar3 from "../assets/javascript..png";
 import gambar2 from "../assets/react..png"; // Jika ada gambar kedua
+import gambar4 from "../assets/dicoding.png"; // Jika ada gambar kedua
 
 // Data Dummy Sertifikat
 const certificatesData = [
@@ -32,6 +33,14 @@ const certificatesData = [
     link: "https://example.com/sertifikat-js",
     // 💡 Gunakan variabel impor gambar3 di sini
     image: gambar2,
+  },
+  {
+     title: "Dicoding Belajar Dasar AI",
+    issuer: "Udemy",
+    date: "Mei 2024",
+    link: "https://example.com/sertifikat-js",
+    // 💡 Gunakan variabel impor gambar3 di sini
+    image: gambar4,
   },
   // Jika Anda punya gambar kedua untuk Tailwind (misalnya gambar2), 
   // Anda harus mengimpornya dan menambahkannya ke array ini juga.
