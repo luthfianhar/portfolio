@@ -26,7 +26,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="sm:col-span-2 bg-white p-4 rounded-lg text-black">
+        <div className="sm:col-span-2 bg-gray-400 p-4 rounded-lg text-black w-100 h-30">
           <h3 className="font-semibold text-lg mb-4 text-white">Newsletter</h3>
           <form className="flex">
             <input
