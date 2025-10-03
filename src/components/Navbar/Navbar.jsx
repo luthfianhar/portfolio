@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import gambar1 from "../assets/logo-ANHAR.png";
+import gambar1 from "../../assets/logo-ANHAR.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-black/40 shadow-lg">
+    <header className="sticky top-0 font-sans bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white z-50 shadow-lg">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
         <img src={gambar1} alt="Logo" className="h-12 w-12 object-contain" />
 

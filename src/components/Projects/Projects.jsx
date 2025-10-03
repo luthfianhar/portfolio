@@ -2,17 +2,15 @@
 
 import React from "react";
 // Sesuaikan path import gambar sesuai struktur folder Anda
-import gambar2 from "../assets/data.png"; 
-import gambar3 from "../assets/kalkulator.png";
+import gambar2 from "../../assets/data.png"; 
+import gambar3 from "../../assets/kalkulator.png";
+import gambar4 from "../../assets/portfolio.png"
 
 const projectsData = [
   { img: gambar2, title: "DATA LIST", link: "https://10-b.vercel.app/" },
   { img: gambar3, title: "KALKULATOR", link: "https://kalkolatorkece.vercel.app/" },
-  {
-    img: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=60",
-    title: "PROJECT 3",
-    link: "#",
-  },
+  { img: gambar4, title: "PORTFOLIO", link: "https://10-b.vercel.app/" },
+ 
 ];
 
 export default function Projects() {

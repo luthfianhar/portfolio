@@ -8,6 +8,7 @@ const skillsData = [
   "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
   "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
   "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+   "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" ,
 ];
 
 export default function Skills() {

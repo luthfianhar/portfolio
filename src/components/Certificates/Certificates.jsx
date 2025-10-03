@@ -2,10 +2,10 @@
 
 import React from "react";
 // Import gambar lokal Anda
-import gambar1 from "../assets/HTML.png";
-import gambar3 from "../assets/javascript..png";
-import gambar2 from "../assets/react..png"; // Jika ada gambar kedua
-import gambar4 from "../assets/dicoding.png"; // Jika ada gambar kedua
+import gambar1 from "../../assets/HTML.png";
+import gambar3 from "../../assets/javascript..png";
+import gambar2 from "../../assets/react..png"; // Jika ada gambar kedua
+import gambar4 from "../../assets/dicoding.png"; // Jika ada gambar kedua
 
 // Data Dummy Sertifikat
 const certificatesData = [
@@ -75,9 +75,7 @@ export default function Certificates() {
               href={cert.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-auto bg-amber-500 text-white px-5 py-2 rounded-full font-medium text-sm hover:bg-amber-600 transition"
-            >
-              Lihat Bukti
+             >
             </a>
           </div>
         ))}

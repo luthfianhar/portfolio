@@ -1,16 +1,13 @@
 // File: src/Main.jsx
-
-import React from "react";
-import gambar1 from "../assets/poto.png";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Certificates from "./Certificates";
-import Galery from "./Galery";
+import gambar1 from "../../assets/poto.png";
+import Skills from "../Skills/Skills";
+import Projects from "../Projects/Projects";
+import Certificates from "../Certificates/Certificates";
+import Galery from "../Galery/Galery";
 
 export default function Main() {
   return (
-    <>
-    <main>
+    <main className="font-sans bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       {/* Hero */}
       <section
         id="home"
@@ -58,9 +55,9 @@ export default function Main() {
 
       {/* Projects */}
       <Projects />
+
+        {/* Galery */}
+      <Galery />
     </main>
-      
-    </>
   );
 }
-
