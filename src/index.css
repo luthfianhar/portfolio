@@ -1,3 +1,29 @@
 @import "tailwindcss";
 
 @tailwind utilities;
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-Medium.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/HelveticaNowDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+ 
+
+
+@theme {
+  --color-primary:#2C3E50;
+  --color-secondary:#1A2938;
+  --color-accent:#0F1821;
+
+  
+  --font-1: "Figtree", sans-serif;
+  --font-2: "Helvetica", sans-serif;
+}
