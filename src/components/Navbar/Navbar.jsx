@@ -5,8 +5,8 @@ import gambar1 from "../../assets/logo-ANHAR.png";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const links = [
-    { name: "Home", href: "#home" },
+  const links = [ 
+    { name: "Home ", href: "#home " },
     { name: "My Skill", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Certificates", href: "#certificates" },
@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
         <div className="flex items-center gap-3">
           <img src={gambar1} alt="Logo" className="h-10 w-10 object-contain" />
-          <span className="font-2  text-xl tracking-wide">LUTHFI ANHAR</span>
+          <span className="font-2 text- text-xl tracking-wide">LUTHFI ANHAR</span>
         </div>
 
         {/* Desktop Menu */}

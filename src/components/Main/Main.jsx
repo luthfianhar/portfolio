@@ -3,6 +3,8 @@ import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 import Certificates from "../Certificates/Certificates";
 import Galery from "../Galery/Galery";
+import About from "../About/About";
+import CTA from "../CTA/CTA";
 
 export default function Main() {
   return (
@@ -18,7 +20,7 @@ export default function Main() {
               Pelajar yang antusias mempelajari teknologi dan pengembangan perangkat lunak. 
               Terampil dalam pemrograman web dan menyukai tantangan dengan solusi kreatif.
             </p>
-            <a href="#projects">
+            <a href="https://www.linkedin.com/feed/">
               <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2 rounded-full font-medium shadow-md hover:shadow-lg transition-all">
                 Get Started
               </button>
@@ -38,10 +40,12 @@ export default function Main() {
       </section>
 
       {/* Sections */}
-      <Skills />
-      <Certificates />
-      <Projects />
+      <CTA />
+      <About />
       <Galery />
+      <Skills />
+      <Projects />
+      <Certificates />
     </main>
   );
 }

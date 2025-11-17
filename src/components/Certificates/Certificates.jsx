@@ -48,7 +48,7 @@ const certificatesData = [
 
 export default function Certificates() {
   return (
-    <section id="certificates" className="py-16 px-6 md:px-12 text-center bg-gray-900">
+    <section id="certificates" className="py-16 px-6 md:px-12 text-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       <h2 className="text-3xl md:text-4xl font-bold mb-12">Certifications</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {certificatesData.map((cert, i) => (
