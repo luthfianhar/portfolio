@@ -5,8 +5,8 @@ export default function About() {
     <section id="about" className="py-20 px-6 md:px-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-4">About Me</h2>
-          <p className="text-gray-300 leading-relaxed text-base md:text-lg">
+          <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-4 font-2">About Me</h2>
+          <p className="text-gray-300 leading-relaxed text-base md:text-lg font-1">
             Saya adalah pelajar yang memiliki minat tinggi dalam dunia teknologi,
             terutama pengembangan web. Saya fokus dalam membangun antarmuka yang
             modern, responsif, dan mudah digunakan. Saya juga senang bereksperimen

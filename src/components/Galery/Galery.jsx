@@ -1,17 +1,20 @@
 // src/components/Galery.jsx
 import React from 'react';
+import a from  '../../assets/a.jpg';
+import c from  '../../assets/c.jpg';
+import b from  '../../assets/b.jpg';
 
 // Data dummy gambar (Ganti dengan URL foto Anda sendiri)
 const PHOTO_DATA = [
-  { id: 1, url: 'https://picsum.photos/id/431/400/300', alt: 'Pemandangan Pegunungan' },
-  { id: 2, url: 'https://picsum.photos/id/345/400/300', alt: 'Jalanan Kota' },
-  { id: 3, url: 'https://picsum.photos/id/212/400/300', alt: 'Hewan Peliharaan' },
+  { id: 1, url: a, alt: 'Pemandangan Pegunungan' },
+  { id: 2, url: c, alt: 'Jalanan Kota' },
+  { id: 3, url: b, alt: 'Hewan Peliharaan' },
 ]
 
 function Galery() {
   return (
     <div className="p-5 max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold text-center mb-10 text-white">
+      <h1 className="text-4xl font-2 text-center mb-10 text-white">
         Photo Gallery
       </h1>
       

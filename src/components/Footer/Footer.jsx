@@ -28,7 +28,7 @@ export default function Footer() {
             <input
               type="email"
               placeholder="Your email"
-              className="flex-1 p-2 rounded-l-lg text-gray-900 outline-none"
+              className="flex-1 p-2 rounded-l-lg text-gray-900 outline-none placeholder-white"
             />
             <button
               type="submit"

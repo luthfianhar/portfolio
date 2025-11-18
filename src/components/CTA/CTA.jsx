@@ -7,7 +7,7 @@ export default function CTA() {
 
       <div className="relative max-w-3xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6 drop-shadow-lg">
-          Ready to Start a LINKEDIN
+          Ready to Start <span className="text-amber-400 font-2">a LINKEDIN</span> 
         </h2>
 
         

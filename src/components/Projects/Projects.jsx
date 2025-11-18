@@ -21,7 +21,7 @@ export default function Projects() {
           >
             <img src={p.img} alt={p.title} className="rounded-xl mb-4 w-full h-44 object-cover" />
             <h3 className="text-lg font-semibold mb-2">{p.title}</h3>
-            <a href={p.link} target="_blank" rel="noopener noreferrer" className="bg-amber-500 text-white px-5 py-2 rounded-full font-medium hover:bg-amber-600 transition">
+            <a href={p.link} target="_blank" rel="noopener noreferrer" className="bg-amber-500 text-white px-5 py-2 rounded-full font-medium hover:bg-amber-600 transition font-2">
               View Details
             </a>
           </div>

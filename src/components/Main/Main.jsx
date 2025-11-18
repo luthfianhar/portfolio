@@ -13,15 +13,15 @@ export default function Main() {
       <section id="home" className="min-h-[85vh] flex flex-col justify-center items-center px-6 md:px-16 text-center md:text-left">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2">
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-5 leading-snug">
-              Hi, I’m <span className="text-amber-400">Luthfi Anhar</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-5 leading-snug font-2">
+              Hi, I’m <span className="text-amber-400 font-2">Luthfi Anhar</span>
             </h1>
-            <p className="text-gray-300 text-base md:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-300 text-base md:text-lg mb-6 leading-relaxed font-1">
               Pelajar yang antusias mempelajari teknologi dan pengembangan perangkat lunak. 
               Terampil dalam pemrograman web dan menyukai tantangan dengan solusi kreatif.
             </p>
             <a href="https://www.linkedin.com/feed/">
-              <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2 rounded-full font-medium shadow-md hover:shadow-lg transition-all">
+              <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2 rounded-full font-medium shadow-md hover:shadow-lg transition-all font-2">
                 Get Started
               </button>
             </a>
@@ -40,12 +40,12 @@ export default function Main() {
       </section>
 
       {/* Sections */}
-      <CTA />
       <About />
       <Galery />
       <Skills />
       <Projects />
       <Certificates />
+      <CTA />
     </main>
   );
 }
