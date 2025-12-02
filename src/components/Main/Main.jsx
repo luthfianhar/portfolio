@@ -1,12 +1,23 @@
-import gambar1 from "../../assets/poto.png";
+import React from "react";
+
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
-import Certificates from "../Certificates/Certificates";
+import Certifications from "../Certifications/Certifications";
 import Galery from "../Galery/Galery";
 import About from "../About/About";
 import CTA from "../CTA/CTA";
+import { useEffect } from "react";
 
 export default function Main() {
+   const [items, setItems] = React.useState([]);
+     useEffect(() => {
+      fetch("https://luthfianhar.github.io/asset/data/hero.json")
+        .then((res) => res.json())
+        .then((data) => {
+          setItems(data);
+        })
+        .catch((err) => console.error("Gagal mengambil data:", err));
+    }, []);
   return (
     <main className="font-sans bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       {/* Hero */}
@@ -30,7 +41,7 @@ export default function Main() {
           <div className="md:w-1/2 flex justify-center">
             <div className="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden shadow-xl ring-4 ring-amber-400/40">
               <img
-                src={gambar1}
+                src={items.gambar}
                 alt="Profile"
                 className="object-cover w-full h-full scale-105 hover:scale-110 transition-transform duration-500"
               />
@@ -44,7 +55,7 @@ export default function Main() {
       <Galery />
       <Skills />
       <Projects />
-      <Certificates />
+      <Certifications />
       <CTA />
     </main>
   );

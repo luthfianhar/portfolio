@@ -1,17 +1,21 @@
 // File: src/components/Skills.jsx
 
 import React from "react";
+import { useEffect } from "react";
 
 // Data Skills, bisa juga dipindahkan ke file data terpisah
-const skillsData = [
-  "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-  "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-  "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-  "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-   "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" ,
-];
+
 
 export default function Skills() {
+  const [items, setItems] = React.useState([]);
+       useEffect(() => {
+        fetch("https://luthfianhar.github.io/asset/data/Skills.json")
+          .then((res) => res.json())
+          .then((data) => {
+            setItems(data);
+          })
+          .catch((err) => console.error("Gagal mengambil data:", err));
+      }, []);
   return (
     <section id="skills" className="py-16 text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-10">My Skills</h2>
@@ -22,10 +26,10 @@ export default function Skills() {
           opacity-90
         "
       >
-        {skillsData.map((s, i) => (
+        {items.map((items, i) => (
           <img
             key={i}
-            src={s}
+            src={items.gambar}
             alt="skill"
             className="h-12 md:h-14 hover:scale-110 transition-transform"
           />

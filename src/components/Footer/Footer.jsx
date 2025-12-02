@@ -13,7 +13,7 @@ export default function Footer() {
           ))}
         </div>
         </div>
-      <p className="text-center text-sm text-gray-400 mt-8">  
+      <p className="text-center text-sm text-gray-400 mt-8">    
         © {new Date().getFullYear()} Luthfi Anhar. All rights reserved.
       </p>
     </footer>

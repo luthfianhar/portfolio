@@ -1,17 +1,17 @@
 // src/components/Galery.jsx
 import React from 'react';
-import a from  '../../assets/a.jpg';
-import c from  '../../assets/c.jpg';
-import b from  '../../assets/b.jpg';
-
-// Data dummy gambar (Ganti dengan URL foto Anda sendiri)
-const PHOTO_DATA = [
-  { id: 1, url: a, alt: 'Pemandangan Pegunungan' },
-  { id: 2, url: c, alt: 'Jalanan Kota' },
-  { id: 3, url: b, alt: 'Hewan Peliharaan' },
-]
+import { useEffect } from "react";
 
 function Galery() {
+   const [items, setItems] = React.useState([]);
+     useEffect(() => {
+      fetch("https://luthfianhar.github.io/asset/data/Galery.json")
+        .then((res) => res.json())
+        .then((data) => {
+          setItems(data);
+        })
+        .catch((err) => console.error("Gagal mengambil data:", err));
+    }, []);
   return (
     <div className="p-5 max-w-6xl mx-auto">
       <h1 className="text-4xl font-2 text-center mb-10 text-white">
@@ -27,7 +27,7 @@ function Galery() {
           gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))'
         }}
       >
-        {PHOTO_DATA.map((photo) => (
+        {items.map((photo) => (
           <div 
             key={photo.id} 
             className="overflow-hidden rounded-lg shadow-xl 
@@ -35,7 +35,7 @@ function Galery() {
                        transform hover:-translate-y-1 hover:shadow-2xl"
           >
             <img 
-              src={photo.url} 
+              src={photo.gambar} 
               alt={photo.alt} 
               className="w-full h-64 object-cover" 
               loading="lazy"
